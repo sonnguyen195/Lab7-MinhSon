@@ -23,8 +23,8 @@
         $(document).ready(function () {
             $.getJSON(url)
                 .done(function (data) {
-                    $.each(data, funtion(key, item){
-                        $('<li>', { text: formatItem(item)}).appendTo($('#saches'));
+                    $.each(data, function(key, item){
+                        $("<li>" , { text: formatItem(item)}).appendTo($('#saches'));
                     });
                 });
          });
